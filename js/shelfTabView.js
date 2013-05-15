@@ -18,7 +18,6 @@ var ShelfTabView = Backbone.View.extend({
       console.log(v.render().el);
       this.$("#shelf_list").append(v.render().el);
     }, this);
-    console.log(this.$el.html());
   },
   showRegistForm: function() {
     if (!this.registFormOpen) {
