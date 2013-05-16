@@ -38,3 +38,7 @@ div#page_navi li:hover {
 background: rgba(0, 0, 0, 0.15);
 -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
 }
+
+thead#shelf_list_header th {
+background-color: rgba(0, 0, 0, 0.15);
+}

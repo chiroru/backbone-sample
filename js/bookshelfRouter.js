@@ -6,12 +6,15 @@ var BookshelfRouter = Backbone.Router.extend({
   },
 
   homeTab: function() {
-    var $t = jQuery("#tabs").tabs({active: 1});
+    console.log("route home tag");
+    jQuery("#home").trigger("click");
   },
   shelfTab: function() {
-    var $t = jQuery("#tabs").tabs({active: 2});
+    console.log("route shelf tag");
+    jQuery("#shelfs").trigger("click");
   },
   bookTab: function() {
-    var $t = jQuery("#tabs").tabs({active: 3});
+    console.log("route book tag");
+    jQuery("#books").trigger("click");
   }
 });
