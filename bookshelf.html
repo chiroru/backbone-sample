@@ -12,7 +12,12 @@
   <link rel="stylesheet" href="./css/common.css">
   <script type="text/javascript">
     jQuery(document).ready(function() {
-      jQuery("#tabs").tabs();
+        jQuery("#tabs").tabs({
+            activate: function( event, ui ) {
+                console.log(ui.newTab);
+                location.hash = ui.newTab.context.hash;
+            }
+        });
     });
   </script>
 </head>
@@ -76,5 +81,6 @@
   <script type="text/javascript" src="js/shelf.js"></script>
   <script type="text/javascript" src="js/shelfView.js"></script>
   <script type="text/javascript" src="js/shelfTabView.js"></script>
+  <script type="text/javascript" src="js/bookshelfRouter.js"></script>
   <script type="text/javascript" src="js/bookshelfApp.js"></script>
 </html>
